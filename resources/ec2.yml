@@ -19,7 +19,8 @@ Resources:
        InstanceType: "t2.micro"
        Tags:
          - Key: Name
-           Value: MyEC2Instance2      
+           Value: MyEC2Instance2  
+               
    MyECRRepository2:
       Type: 'AWS::ECR::Repository'
       Properties:
