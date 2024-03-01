@@ -1,6 +1,7 @@
 ---
 Resources:
-   MyEC2Instance1: 
+
+   MyEC2Instance: 
     Type: AWS::EC2::Instance
     Properties: 
       ImageId: "ami-0e670eb768a5fc3d4"
@@ -19,11 +20,6 @@ Resources:
         ImageScanningConfiguration:
            scanOnPush: true
 
-   MyECRRepository1:
-      Type: 'AWS::ECR::Repository'
-      Properties:
-        RepositoryName: my-ecr-repository1
-        ImageScanningConfiguration:
-           scanOnPush: true
+   
    
 
