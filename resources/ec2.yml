@@ -10,7 +10,8 @@ Resources:
       Tags:
         - Key: Name
           Value: MyEC2Instance1
-    MyEC2Instance: 
+    
+   MyEC2Instance: 
      Type: AWS::EC2::Instance
      Properties: 
        ImageId: "ami-0e670eb768a5fc3d4"
@@ -19,7 +20,7 @@ Resources:
        Tags:
          - Key: Name
            Value: MyEC2Instance2      
-    MyECRRepository2:
+   MyECRRepository2:
       Type: 'AWS::ECR::Repository'
       Properties:
         RepositoryName: my-ecr-repository4
