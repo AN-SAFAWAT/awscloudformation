@@ -10,7 +10,7 @@ Resources:
         - Key: Name
           Value: MyEC2Instance1
     
-    MyECRRepository:
+   MyECRRepository:
       Type: 'AWS::ECR::Repository'
       Properties:
         RepositoryName: my-ecr-repository
