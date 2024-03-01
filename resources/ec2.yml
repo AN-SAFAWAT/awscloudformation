@@ -9,6 +9,7 @@ Resources:
       Tags:
         - Key: Name
           Value: MyEC2Instance1
+          
    MyEC2Instance2: 
     Type: AWS::EC2::Instance
     Properties: 
@@ -17,7 +18,8 @@ Resources:
       InstanceType: "t2.micro"
       Tags:
         - Key: Name
-          Value: MyEC2Instance2 
+          Value: MyEC2Instance2
+
    MyECRRepository2:
       Type: 'AWS::ECR::Repository'
       Properties:
@@ -25,7 +27,7 @@ Resources:
         ImageScanningConfiguration:
            scanOnPush: true
 
-    MyECRRepository1:
+   MyECRRepository1:
       Type: 'AWS::ECR::Repository'
       Properties:
         RepositoryName: my-ecr-repository1
